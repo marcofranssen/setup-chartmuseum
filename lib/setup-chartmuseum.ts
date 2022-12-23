@@ -7,7 +7,7 @@ import { mapOS, mapArch, download } from "./utils";
 
 export async function setupchartmuseum() {
   try {
-    const chartmuseumVersion = core.getInput("chartmuseumVersion");
+    const chartmuseumVersion = core.getInput("chartmuseum-version");
 
     core.debug(`Installing chartmuseum ${chartmuseumVersion}…`);
 

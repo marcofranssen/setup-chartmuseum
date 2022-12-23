@@ -5,7 +5,7 @@ branding:
   color: 'blue'
 author: Marco Franssen
 inputs:
-  chartmuseumVersion:
+  chartmuseum-version:
     description: >-
       The chartmuseum version you want to use.
     required: false

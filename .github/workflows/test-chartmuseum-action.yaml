@@ -68,7 +68,7 @@ jobs:
         id: setup-chartmuseum
         uses: ./
         with:
-          chartmuseumVersion: ${{ matrix.version }}
+          chartmuseum-version: ${{ matrix.version }}
 
       - name: Check output and installPath
         run: |
