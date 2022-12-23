@@ -47,6 +47,9 @@ jobs:
         version:
           - v0.14.0
           - v0.15.0
+        bootup:
+          - true
+          - false
 
     runs-on: ${{ matrix.os }}
 
@@ -69,10 +72,21 @@ jobs:
         uses: ./
         with:
           chartmuseum-version: ${{ matrix.version }}
+          bootup: ${{ matrix.bootup }}
 
       - name: Check output and installPath
         run: |
           hash chartmuseum 2>/dev/null || { echo >&2 "chartmuseum can not be found in the PATH."; exit 1; }
           echo "::notice::Installed chartmuseum ${chartmuseum_VERSION} at $(which chartmuseum)"
+          echo "::notice::Chartmuseum runs at ${chartmuseum_endpoint} "
         env:
           chartmuseum_VERSION: ${{ steps.setup-chartmuseum.outputs.chartmuseum-version }}
+          chartmuseum_endpoint: ${{ steps.setup-chartmuseum.outputs.chartmuseum-endpoint }}
+
+      - name: Check chartmuseum is running and reachable
+        if: matrix.bootup
+        run: |
+          ps aux | grep chartmuseum
+          curl -v ${chartmuseum_endpoint}
+        env:
+          chartmuseum_endpoint: ${{ steps.setup-chartmuseum.outputs.chartmuseum-endpoint }}

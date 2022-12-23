@@ -57,3 +57,7 @@ export function extract(pathToCMTar: string) {
     ? tc.extractZip(pathToCMTar)
     : tc.extractTar(pathToCMTar);
 }
+
+export function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
