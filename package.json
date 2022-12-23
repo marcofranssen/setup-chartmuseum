@@ -11,7 +11,8 @@
     "build-main": "ncc build -m -s --license licenses.txt",
     "build-post": "ncc build shutdown-chartmuseum.ts -m -s --license licenses.txt -o dist/shutdown-chartmuseum",
     "build:watch": "ncc build -m -s --license licenses.txt -w",
-    "local-exec": "RUNNER_TEMP=.runner-temp RUNNER_TOOL_CACHE=.runner-cache node --enable-source-maps dist/index.js"
+    "local-exec": "RUNNER_TEMP=.runner-temp RUNNER_TOOL_CACHE=.runner-cache node --enable-source-maps dist/index.js",
+    "test-run": "act -j test"
   },
   "dependencies": {
     "@actions/artifact": "^1.1.1",
