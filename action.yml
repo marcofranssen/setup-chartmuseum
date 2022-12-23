@@ -10,9 +10,24 @@ inputs:
       The chartmuseum version you want to use.
     required: false
     default: v0.15.0
+  bootup:
+    description: >-
+      Start chartmuseum after install.
+    required: false
+    default: "false"
+  port:
+    description: >-
+      The port to run chartmuseum on.
+    required: false
+    default: "8879"
 outputs:
   chartmuseum-version:
     description: 'The chartmuseum version that was installed.'
+  chartmuseum-port:
+    description: 'The URL at which chartmuseum runs.'
+  chartmuseum-endpoint:
+    description: 'The URL at which chartmuseum runs.'
 runs:
   using: 'node16'
   main: 'dist/index.js'
+  post: 'dist/shutdown-chartmuseum/index.js'
