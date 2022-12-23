@@ -41,7 +41,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-22.04]
+        os:
+          - ubuntu-22.04
+          - macos-12
         version:
           - v0.14.0
           - v0.15.0
