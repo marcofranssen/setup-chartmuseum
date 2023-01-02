@@ -20,8 +20,8 @@ export function mapArch(arch: string): string {
 }
 
 export async function download(url: string, checksumURL: RequestInfo) {
-  const pathToCLI = await tc.downloadTool(url);
-  if (!pathToCLI) {
+  const pathToCMTar = await tc.downloadTool(url);
+  if (!pathToCMTar) {
     throw new Error(`Unable to download tool from ${url}`);
   }
 
@@ -36,7 +36,7 @@ export async function download(url: string, checksumURL: RequestInfo) {
 
   const checksum = (await response.text()).trim().split(" ")[0];
 
-  const fileBuffer = await readFile(pathToCLI);
+  const fileBuffer = await readFile(pathToCMTar);
   const hash = createHash("sha256");
   hash.update(fileBuffer);
 
@@ -49,5 +49,11 @@ export async function download(url: string, checksumURL: RequestInfo) {
 
   core.debug(`Checksums matched: ${checksum}`);
 
-  return pathToCLI;
+  return pathToCMTar;
+}
+
+export function extract(pathToCMTar: string) {
+  return process.platform === "win32"
+    ? tc.extractZip(pathToCMTar)
+    : tc.extractTar(pathToCMTar);
 }
