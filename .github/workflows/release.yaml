@@ -22,19 +22,19 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3.8.1
         with:
-          node-version: '16'
+          node-version: '20'
 
-      - name: Setup yarn
-        run: npm install -g yarn
+      - name: Setup pnpm
+        run: npm install -g pnpm
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
       - name: Check dist updated
         run: |
-          yarn build
+          pnpm build
           git diff --quiet -- dist || {
-            echo "::error::The ./dist is outdated, run 'yarn build' and commit"
+            echo "::error::The ./dist is outdated, run 'pnpm build' and commit"
             exit 1
           }
 
