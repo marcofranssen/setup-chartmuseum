@@ -7,7 +7,7 @@
   "author": "Marco Franssen <marco.franssen@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "yarn build-main && yarn build-post",
+    "build": "pnpm build-main && pnpm build-post",
     "build-main": "ncc build -m -s --license licenses.txt",
     "build-post": "ncc build shutdown-chartmuseum.ts -m -s --license licenses.txt -o dist/shutdown-chartmuseum",
     "build:watch": "ncc build -m -s --license licenses.txt -w",
