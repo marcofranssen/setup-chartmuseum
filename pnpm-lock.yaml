@@ -22,9 +22,9 @@ dependencies:
     version: 3.3.2
 
 devDependencies:
-  '@tsconfig/node16':
-    specifier: ^16.1.0
-    version: 16.1.0
+  '@tsconfig/node20':
+    specifier: ^20.1.2
+    version: 20.1.2
   '@types/node':
     specifier: ^20.6.0
     version: 20.6.0
@@ -80,8 +80,8 @@ packages:
       uuid: 3.4.0
     dev: false
 
-  /@tsconfig/node16@16.1.0:
-    resolution: {integrity: sha512-cfwhqrdZEKS+Iqu1OPDwmKsOV/eo7q4sPhWzOXc1rU77nnPFV3+77yPg8uKQ2e8eir6mERCvrKnd+EGa4qo4bQ==}
+  /@tsconfig/node20@20.1.2:
+    resolution: {integrity: sha512-madaWq2k+LYMEhmcp0fs+OGaLFk0OenpHa4gmI4VEmCKX4PJntQ6fnnGADVFrVkBj0wIdAlQnK/MrlYTHsa1gQ==}
     dev: true
 
   /@types/node@20.6.0:
