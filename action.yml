@@ -9,7 +9,7 @@ inputs:
     description: >-
       The chartmuseum version you want to use.
     required: false
-    default: v0.15.0
+    default: v0.16.0
   bootup:
     description: >-
       Start chartmuseum after install.
