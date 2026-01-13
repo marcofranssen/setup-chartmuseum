@@ -7,7 +7,7 @@ on:
 jobs:
   check-dist:
     name: Check dist
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     permissions:
       contents: read
@@ -42,7 +42,7 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - ubuntu-22.04
+          - ubuntu-24.04
           - macos-15
         version:
           - v0.14.0
