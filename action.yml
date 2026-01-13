@@ -28,6 +28,6 @@ outputs:
   chartmuseum-endpoint:
     description: 'The URL at which chartmuseum runs.'
 runs:
-  using: 'node16'
+  using: 'node24'
   main: 'dist/index.js'
   post: 'dist/shutdown-chartmuseum/index.js'
