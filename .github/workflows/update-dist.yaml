@@ -8,7 +8,7 @@ on:
 jobs:
   update-dist:
     name: Update dist
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: >
       startsWith(github.head_ref, 'dependabot/npm_and_pnpm') &&
       github.actor == 'dependabot[bot]'
@@ -44,7 +44,7 @@ jobs:
 
   auto-approve-pr:
     name: Update dist
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     if: >
       startsWith(github.head_ref, 'dependabot/npm_and_pnpm') &&
       github.actor == 'dependabot[bot]'
