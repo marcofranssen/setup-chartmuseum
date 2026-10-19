@@ -24,7 +24,7 @@
     "@tsconfig/node24": "^24.0.3",
     "@types/node": "^24.2.1",
     "@vercel/ncc": "^0.38.4",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "type": "module"
 }
