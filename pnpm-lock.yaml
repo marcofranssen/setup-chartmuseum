@@ -28,18 +28,14 @@ importers:
         specifier: ^24.0.3
         version: 24.0.3
       '@types/node':
-        specifier: ^24.2.1
-        version: 24.2.1
+        specifier: ^26.6.5
+        version: 26.6.5
       '@vercel/ncc':
         specifier: ^0.38.4
         version: 0.38.4
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
-
-  dist: {}
-
-  dist/shutdown-chartmuseum: {}
 
 packages:
 
@@ -213,8 +209,8 @@ packages:
   '@tsconfig/node24@24.0.3':
     resolution: {integrity: sha512-vcERKtKQKHgzt/vfS3Gjasd8SUI2a0WZXpgJURdJsMySpS5+ctgbPfuLj2z/W+w4lAfTWxoN4upKfu2WzIRYnw==}
 
-  '@types/node@24.2.1':
-    resolution: {integrity: sha512-DRh5K+ka5eJic8CjH7td8QpYEV6Zo10gfRkjHCO3weqZHWDtAaSTFtl4+VMqOJ4N5jcuhZ9/l+yy8rVgw7BQeQ==}
+  '@types/node@26.6.5':
+    resolution: {integrity: sha512-uMzsv9stDdofIZBx4UGh4Z9ZgXnGC9seRDscilBcTHAeOFk67MZg/k9bWVfO+bk4qZmG+l52hRnLwUiH2LnJTg==}
 
   '@vercel/ncc@0.38.4':
     resolution: {integrity: sha512-8LwjnlP39s08C08J5NstzriPvW1SP8Zfpp1BvC2sI35kPeZnHfxVkCwu4/+Wodgnd60UtT1n8K8zw+Mp7J9JmQ==}
@@ -590,8 +586,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@7.10.0:
-    resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
+  undici-types@8.9.0:
+    resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
   undici@5.29.0:
     resolution: {integrity: sha512-raqeBD6NQK4SkWhQzeYKd1KmIG6dllBOTt55Rmkt4HtI9mwdWtJljnrXjAFUBLTSN67HWrOIZ3EPF4kjUw80Bg==}
@@ -904,9 +900,9 @@ snapshots:
 
   '@tsconfig/node24@24.0.3': {}
 
-  '@types/node@24.2.1':
+  '@types/node@26.6.5':
     dependencies:
-      undici-types: 7.10.0
+      undici-types: 8.9.0
 
   '@vercel/ncc@0.38.4': {}
 
@@ -1264,7 +1260,7 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  undici-types@7.10.0: {}
+  undici-types@8.9.0: {}
 
   undici@5.29.0:
     dependencies:
