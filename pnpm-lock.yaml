@@ -25,8 +25,8 @@ importers:
         version: 3.3.2
     devDependencies:
       '@tsconfig/node24':
-        specifier: ^24.0.3
-        version: 24.0.3
+        specifier: ^24.0.5
+        version: 24.0.5
       '@types/node':
         specifier: ^24.2.1
         version: 24.2.1
@@ -210,8 +210,8 @@ packages:
   '@protobuf-ts/runtime@2.9.6':
     resolution: {integrity: sha512-C0CfpKx4n4LBbUrajOdRj2BTbd3qBoK0SiKWLq7RgCoU6xiN4wesBMFHUOBp3fFzKeZwgU8Q2KtzaqzIvPLRXg==}
 
-  '@tsconfig/node24@24.0.3':
-    resolution: {integrity: sha512-vcERKtKQKHgzt/vfS3Gjasd8SUI2a0WZXpgJURdJsMySpS5+ctgbPfuLj2z/W+w4lAfTWxoN4upKfu2WzIRYnw==}
+  '@tsconfig/node24@24.0.5':
+    resolution: {integrity: sha512-DWC54fGPuhZgg3Ighg4Y/A/bA3ZdB5hnzAuv/MkQ/X85sVsBsMQxu8t7khutdYeiNksBbFdDyeqv1HSW2Zl8aA==}
 
   '@types/node@24.2.1':
     resolution: {integrity: sha512-DRh5K+ka5eJic8CjH7td8QpYEV6Zo10gfRkjHCO3weqZHWDtAaSTFtl4+VMqOJ4N5jcuhZ9/l+yy8rVgw7BQeQ==}
@@ -902,7 +902,7 @@ snapshots:
 
   '@protobuf-ts/runtime@2.9.6': {}
 
-  '@tsconfig/node24@24.0.3': {}
+  '@tsconfig/node24@24.0.5': {}
 
   '@types/node@24.2.1':
     dependencies:
