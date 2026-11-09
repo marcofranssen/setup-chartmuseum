@@ -29,5 +29,5 @@ outputs:
     description: 'The URL at which chartmuseum runs.'
 runs:
   using: 'node24'
-  main: 'dist/index.js'
-  post: 'dist/shutdown-chartmuseum/index.js'
+  main: 'dist/index.cjs'
+  post: 'dist/shutdown-chartmuseum/index.cjs'

@@ -28,4 +28,21 @@ steps:
   - run: helm repo add my-repo ${{ steps.chartmuseum.output.chartmuseum-endpoint }}
 ```
 
+## Development
+
+Use Node.js 24 and pnpm:
+
+```sh
+pnpm install
+pnpm build
+```
+
+Commit the regenerated `dist/` directory with source or dependency changes.
+The tsup build bundles dependencies into `dist/index.cjs` and
+`dist/shutdown-chartmuseum/index.cjs`, including source maps. Consumers do not
+need to install dependencies. Each build removes stale distribution files.
+Use `pnpm build:watch` to rebuild both entrypoints during development.
+The `pnpm-workspace.yaml` build policy permits esbuild's installation script,
+so dependency installation also works non-interactively in CI.
+
 [chartmuseum]: https://chartmuseum.com "Host your own Helm Chart Repository"
