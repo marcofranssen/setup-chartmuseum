@@ -31,15 +31,11 @@ importers:
         specifier: ^24.2.1
         version: 24.2.1
       '@vercel/ncc':
-        specifier: ^0.38.4
-        version: 0.38.4
+        specifier: ^0.45.0
+        version: 0.45.0
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
-
-  dist: {}
-
-  dist/shutdown-chartmuseum: {}
 
 packages:
 
@@ -228,8 +224,8 @@ packages:
   '@types/node@24.2.1':
     resolution: {integrity: sha512-DRh5K+ka5eJic8CjH7td8QpYEV6Zo10gfRkjHCO3weqZHWDtAaSTFtl4+VMqOJ4N5jcuhZ9/l+yy8rVgw7BQeQ==}
 
-  '@vercel/ncc@0.38.4':
-    resolution: {integrity: sha512-8LwjnlP39s08C08J5NstzriPvW1SP8Zfpp1BvC2sI35kPeZnHfxVkCwu4/+Wodgnd60UtT1n8K8zw+Mp7J9JmQ==}
+  '@vercel/ncc@0.45.0':
+    resolution: {integrity: sha512-8zPi1yO2mHpoKTD+e+Bf0ZT3e+sWHSOyGapm9s7b5R0gxJi3CiFTqmeQiMEyu6ejrz2s09M8JkEoUaTWjBJPQQ==}
     hasBin: true
 
   abort-controller@3.0.0:
@@ -940,7 +936,7 @@ snapshots:
     dependencies:
       undici-types: 7.10.0
 
-  '@vercel/ncc@0.38.4': {}
+  '@vercel/ncc@0.45.0': {}
 
   abort-controller@3.0.0:
     dependencies:
