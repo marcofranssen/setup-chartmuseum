@@ -14,7 +14,7 @@
     "local-exec": "RUNNER_TEMP=.runner-temp RUNNER_TOOL_CACHE=.runner-cache node --enable-source-maps dist/index.js"
   },
   "dependencies": {
-    "@actions/artifact": "^5.0.2",
+    "@actions/artifact": "^6.3.1",
     "@actions/core": "^3.0.1",
     "@actions/tool-cache": "^4.0.0",
     "find-process": "^2.1.1",
